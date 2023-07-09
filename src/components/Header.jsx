@@ -2,14 +2,31 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Heading = styled.h1`
+const HeaderContainer = styled.header`
+  background-color: #007bff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+`;
+
+const Logo = styled.img`
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+`;
+
+const Title = styled.h1`
   font-size: 24px;
-  text-align: center;
-  color: #333;
+  color: #fff;
+  margin: 0;
 `;
 
 function Header({ title }) {
-  return <Heading>{title}</Heading>;
+  return (
+    <HeaderContainer>
+      <Title>{title}</Title>
+    </HeaderContainer>
+  );
 }
 
 export default Header;

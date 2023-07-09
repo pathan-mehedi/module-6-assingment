@@ -3,20 +3,23 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
+height: 80vh;
+    width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 `;
 
 const Button = styled.button`
-  padding: 12px 24px;
+  padding: 15px 40px;
+  margin-bottom: 20px;
   background-color: #00bbff;
   color: #000000;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   font-size: 16px;
-  margin-bottom: 10px;
   transition: background-color 0.3s ease;
 
   &:hover {
