@@ -9,12 +9,6 @@ const HeaderContainer = styled.header`
   align-items: center;
 `;
 
-const Logo = styled.img`
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-`;
-
 const Title = styled.h1`
   font-size: 24px;
   color: #fff;
